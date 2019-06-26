@@ -1,0 +1,389 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-account {
+	position:relative;
+	padding-left:3.125vw;
+}
+.icon-account:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -334px -40px;
+  width: 48px;
+  height: 48px;
+  left:0;
+  top:-0.4167vw;
+}
+.icon-account-mobile {
+	position:relative;
+	padding-left:45px;
+}
+.icon-account-mobile:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -367px -119px;
+  width: 38px;
+  height: 38px;
+  left:0;
+  top:-10px;
+}
+.icon-arrow-down {
+  background-image: url(../images/sprite.png);
+  background-position: -443px -49px;
+  width: 7px;
+  height: 4px;
+}
+.icon-cart {
+	position:relative;
+	padding-left:3.646vw;
+	top:0.156vw;
+}
+.icon-cart:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -276px -40px;
+  width: 58px;
+  height: 55px;
+  left:0;
+  top:-1.146vw;
+}
+.icon-cart-mobile {
+	position:relative;
+	padding-left:50px;
+	top:-15px;
+}
+.icon-cart-mobile:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -322px -119px;
+  width: 40px;
+  height: 38px;
+  left:25px;
+  top:-5px;
+  z-index:-1;
+}
+.icon-icon-assortment.text {
+	position:relative;
+	padding-left:100px;
+	width:calc(100% - 100px);
+}
+.icon-icon-assortment:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: 0px -95px;
+  width: 87px;
+  height: 84px;
+  left:0;
+  top:0;
+}
+
+.icon-icon-cart {
+  width: 2.865vw;
+  height: 2.865vw;
+  border-radius:50%;
+  border:none;
+  background:#efeced;
+  position:relative;
+}
+.icon-icon-cart:hover {
+	background:#961346;
+}
+.icon-icon-cart:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -412px -40px;
+  width: 31px;
+  height: 34px;
+  top:0.521vw;
+  left:0.781vw;
+  border:none;
+}
+.icon-icon-cart:hover:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -412px -87px;
+  width: 31px;
+  height: 34px;
+  top:0.521vw;
+  left:0.781vw;
+  border:none;
+}
+.icon-icon-dlya-doma {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -194px -125px;
+  width: 23px;
+  height: 31px;
+  top:0.58vw;
+}
+.icon-icon-down {
+  background-image: url(../images/sprite.png);
+  background-position: -367px -95px;
+  width: 16px;
+  height: 8px;
+}
+
+.icon-icon-krovati {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -319px -95px;
+  width: 27px;
+  height: 19px;
+  top:0.75vw;
+}
+.icon-icon-left-hover {
+  background-image: url(../images/sprite.png);
+  background-position: -265px -125px;
+  width: 13px;
+  height: 21px;
+}
+.icon-icon-left {
+  background-image: url(../images/sprite.png);
+  background-position: -304px -125px;
+  width: 13px;
+  height: 21px;
+}
+.icon-icon-m-detskaya {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -382px -40px;
+  width: 30px;
+  height: 37px;
+  top:0.3vw;
+}
+.icon-icon-m-gostinnaya {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -170px -95px;
+  width: 35px;
+  height: 30px;
+  top:0.45vw;
+  left:0.5vw;
+}
+.icon-icon-m-prihojaya {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -170px -125px;
+  width: 24px;
+  height: 41px;
+  top:0.2vw;
+}
+.icon-icon-m-spalnya {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -235px -95px;
+  width: 31px;
+  height: 27px;
+  top:0.55vw;
+}
+.icon-icon-mail {
+	position:relative;
+}
+.icon-icon-mail:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -346px -95px;
+  width: 21px;
+  height: 12px;
+  left:0;
+  top:calc(50% - 6px);
+}
+.icon-icon-pays {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 454px;
+  height: 40px;
+}
+.icon-icon-quality.text {
+	position:relative;
+	padding-left:100px;
+	width:calc(100% - 100px);
+}
+.icon-icon-quality:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -87px -95px;
+  width: 83px;
+  height: 77px;
+  top:0;
+  left:0;
+}
+.icon-icon-quastion {
+	position:relative;
+	padding-left:2.61vw;
+}
+.icon-icon-quastion:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -205px -95px;
+  width: 30px;
+  height: 30px;
+  left:0;
+  top:0;
+}
+.icon-icon-right-hover {
+  background-image: url(../images/sprite.png);
+  background-position: -278px -125px;
+  width: 13px;
+  height: 21px;
+}
+.icon-icon-right {
+  background-image: url(../images/sprite.png);
+  background-position: -291px -125px;
+  width: 13px;
+  height: 21px;
+}
+
+.icon-icon-shkafi {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -217px -125px;
+  width: 23px;
+  height: 31px;
+  top:0.45vw;
+}
+.icon-icon-side-right-hover {
+  background-image: url(../images/sprite.png);
+  background-position: -448px -40px;
+  width: 5px;
+  height: 9px;
+}
+.icon-icon-side-right {
+  background-image: url(../images/sprite.png);
+  background-position: -443px -40px;
+  width: 5px;
+  height: 9px;
+}
+.icon-icon-sklad {
+	position:relative;
+}
+.icon-icon-sklad:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: 0px -179px;
+  width: 72px;
+  height: 82px;
+  left:0;
+  top:0;
+}
+.icon-icon-stoli {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -266px -95px;
+  width: 30px;
+  height: 24px;
+  top:0.6vw;
+}
+
+.icon-icon-tumbi {
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -240px -125px;
+  width: 25px;
+  height: 28px;
+  top:0.5vw;
+}
+.icon-icon-up {
+  background-image: url(../images/sprite.png);
+  background-position: -383px -95px;
+  width: 16px;
+  height: 8px;
+}
+.icon-icon-vigoda {
+	position:relative;
+	
+}
+.icon-icon-vigoda:before {
+  position:absolute;
+  content:'';
+  background-image: url(../images/sprite.png);
+  background-position: -72px -179px;
+  width: 69px;
+  height: 78px;
+  top:0;
+  left:0;
+}
+.icon-map {
+	position:relative;
+}
+.icon-map:before {
+  content:'';
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -141px -179px;
+  width: 20px;
+  height: 29px;
+  top:-0.104vw;
+  left:0
+}
+.icon-search {
+  background-image: url(../images/sprite.png);
+  background-position: -296px -95px;
+  width: 23px;
+  height: 23px;
+}
+.icon-soc-seti {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -40px;
+  width: 276px;
+  height: 55px;
+}
+.icon-tire {
+  background-image: url(../images/sprite.png);
+  background-position: -382px -77px;
+  width: 53px;
+  height: 4px;
+}
+.icon-menu {
+	position:relative;
+}
+.icon-menu:before {
+  content:'';
+  position:absolute;
+  background-image: url(../images/sprite.png);
+  background-position: -168px -183px;
+  width: 42px;
+  height: 27px;
+  left:-2.865vw;
+  top:0.365vw;
+}
+@media only screen and (max-width:1400px) {
+	.icon-icon-shkafi, .icon-icon-m-gostinnaya, .icon-icon-dlya-doma {top:5px;}
+	.icon-icon-tumbi, .icon-icon-m-spalnya {top:7px;}
+	.icon-icon-stoli {top:9px;}
+	.icon-icon-m-prihojaya {top:0;}
+	.icon-icon-m-detskaya {top:2px;}
+}
+@media only screen and (max-width:991px) {
+	.icon-icon-shkafi, .icon-icon-m-gostinnaya, .icon-icon-dlya-doma {top:12px;}
+	.icon-icon-tumbi, .icon-icon-m-spalnya {top:12px;}
+	.icon-icon-m-prihojaya {top:6px;}
+	.icon-icon-m-detskaya {top:8px;}
+	.icon-icon-krovati, .icon-icon-stoli {top:15px;}
+}

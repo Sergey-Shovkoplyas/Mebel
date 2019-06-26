@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="noindex, nofollow">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/sprite.css" />
+	<link href="css/jquery.formstyler.css" rel="stylesheet" />
+	<link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+	<link href="css/nouislider.min.css" rel="stylesheet" />
+	<link href="css/slick-lightbox.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<title>Корзина</title>
+  </head>
+  <body>
+	<!--Header-->
+    <header>
+		<div class="mobile-header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-4">
+						<div class="icon-map city-adress">
+								<div class="select sec showChanged">
+									<select>
+										<option>Казань</option>
+										<option>Чебоксары</option>
+										<option>Йошкар-ола</option>
+									</select>
+								</div>
+								
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2 col-2">
+						<div class="account">
+							<a class="icon-account-mobile" href="#" data-toggle="modal" data-target="#ModalLogin">Войти</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-2">
+						<div class="cart">
+							<a class="icon-cart-mobile" href="#">
+								<span class="cart-count">1</span><span class="sum">15 000 Р</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-3 search-box">
+						<a class="search" href="#"><img src="images/search-mobile.png" alt="" /></a>
+						<div class="search-form">
+							<input placeholder="Поиск по сайту" type="search">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-header">
+			<div class="container-fluid">
+				<div class="icon-map city-adress">
+					<div class="select sec showChanged">
+						<select>
+							<option>Казань</option>
+							<option>Чебоксары</option>
+							<option>Йошкар-ола</option>
+						</select>
+					</div>
+										
+				</div>
+				<div class="adresses">
+					<a href="#">Пункты самовывоза</a><span class="num">5</span>
+				</div>
+				<div class="adresses">
+					<a href="#">Адреса магазинов</a><span class="num">2</span>
+				</div>
+				<div class="top-menu">
+					<nav class="desctop-menu navbar navbar-light" role="navigation">
+						<ul class="nav">
+							<li class="active">
+								<a class="nav-link" href="#">О компании</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">Доставка и оплата</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">Дилерам</a>
+							</li>
+							<li>
+								<a class="nav-link" href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>	
+			</div>
+		</div>
+		<div class="header">	
+			<div class="container-fluid">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="phone-box">
+					<div class="phone"><a href="tel:79995678965">+7 (999) 567 89 65</a></div>
+					<div class="popup-callback"><a href="#" data-toggle="modal" data-target="#ModalCallback">Заказать звонок</a></div>
+				</div>
+				<div class="search">
+					<div class="search-form">
+						<input placeholder="Поиск по сайту" type="search">
+					</div>
+				</div>
+				<div class="account">
+					<a class="icon-account" href="#" data-toggle="modal" data-target="#ModalLogin">Войти</a>
+				</div>
+				<div class="cart">
+					<a class="icon-cart" href="#">
+						<span class="cart-count">1</span><span class="sum">15 000 <span class="currency">Р</span></span>
+					</a>
+				</div>
+			</div>
+		</div>	
+		
+	</header>
+<div class="main-container">
+	<div class="container-fluid">
+		<!--Main-menu-->
+		<div class="sidebar">
+			<div class="catalog-menu">
+				<div class="main-menu">
+					<ul class="cd-header-buttons">
+						<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+ 
+		<main class="cd-main-content">
+		<div class="main-content">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a> <span class="sep">>></span> <span>Корзина</span>
+				</div>
+				<h1 class="header-title">Корзина</h1>
+				<div class="cart">
+						<table class="table-cart">
+							<thead>
+								<tr>
+									<th class="td-item">Товар</th>
+									<th>Цена</th>
+									<th>Количество</th>
+									<th>Стоимость</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="td-item">
+										<div class="cart-img"><div class="sticker">-20%</div><a href="#"><img src="images/product_2.png" alt="" /></a></div>
+										<div class="item-name">
+											<a href="#">Диван-кровать "Лиссабон"</a>
+											<span class="item-desc">доступен под заказ, срок доставки 9 дней</span>
+											<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" required /><span class="checkbox-custom"></span><span class="list-item-label">Добавить услугу сборки дивана</span></label>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price">
+										<div>
+											<div class="new-price">19 600 P</div>
+											<div class="old-price">21 150 P</div>
+										</div>
+										<div>
+											<div class="skidka">-20%</div>
+											<div class="vigoda">Экономия 1 800 Р</div>
+										</div>	
+									</td>
+									<td data-th="Количество:">
+										<div class="amount-change small-amount">
+											<div class="input-group">
+												<button class="btn btn-default minus" type="button"><i class="fa fa-minus"></i></button>
+												<input type="text" value="1" placeholder="1">
+												<button class="btn btn-default plus" type="button"><i class="fa fa-plus"></i></button>
+											</div>
+										</div>
+									</td>
+									<td data-th="Стоимость:" class="td-price"><div class="new-price">19 600 P</div></td>
+									<td>
+										<button type="button" class="delete"><img src="images/delete.png" alt="Удалить" /></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="td-item">
+										<div class="cart-img"><div class="sticker">-20%</div><a href="#"><img src="images/product_2.png" alt="" /></a></div>
+										<div class="item-name">
+											<a href="#">Диван-кровать "Лиссабон"</a>
+											<span class="item-desc">доступен под заказ, срок доставки 9 дней</span>
+											<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" required /><span class="checkbox-custom"></span><span class="list-item-label">Добавить услугу сборки дивана</span></label>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price">
+										<div>
+											<div class="new-price">19 600 P</div>
+											<div class="old-price">21 150 P</div>
+										</div>
+										<div>
+											<div class="skidka">-20%</div>
+											<div class="vigoda">Экономия 1 800 Р</div>
+										</div>	
+									</td>
+									<td data-th="Количество:">
+										<div class="amount-change small-amount">
+											<div class="input-group">
+												<button class="btn btn-default minus" type="button"><i class="fa fa-minus"></i></button>
+												<input type="text" value="1" placeholder="1">
+												<button class="btn btn-default plus" type="button"><i class="fa fa-plus"></i></button>
+											</div>
+										</div>
+									</td>
+									<td data-th="Стоимость:" class="td-price"><div class="new-price">19 600 P</div></td>
+									<td>
+										<button type="button" class="delete"><img src="images/delete.png" alt="Удалить" /></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="td-item">
+										<div class="cart-img"><div class="sticker">-20%</div><a href="#"><img src="images/product_2.png" alt="" /></a></div>
+										<div class="item-name">
+											<a href="#">Диван-кровать "Лиссабон"</a>
+											<span class="item-desc">доступен под заказ, срок доставки 9 дней</span>
+											<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" required /><span class="checkbox-custom"></span><span class="list-item-label">Добавить услугу сборки дивана</span></label>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price">
+										<div>
+											<div class="new-price">19 600 P</div>
+											<div class="old-price">21 150 P</div>
+										</div>
+										<div>
+											<div class="skidka">-20%</div>
+											<div class="vigoda">Экономия 1 800 Р</div>
+										</div>	
+									</td>
+									<td data-th="Количество:">
+										<div class="amount-change small-amount">
+											<div class="input-group">
+												<button class="btn btn-default minus" type="button"><i class="fa fa-minus"></i></button>
+												<input type="text" value="1" placeholder="1">
+												<button class="btn btn-default plus" type="button"><i class="fa fa-plus"></i></button>
+											</div>
+										</div>
+									</td>
+									<td data-th="Стоимость:" class="td-price"><div class="new-price">19 600 P</div></td>
+									<td>
+										<button type="button" class="delete"><img src="images/delete.png" alt="Удалить" /></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<div class="total-box">
+							<div class="total-table">
+								<div class="subtotal">
+									<div class="s_name">Стоимость</div>
+									<div class="s_desc">60 697 P</div>
+									<div class="s_name">Дополнительные услуги</div>
+									<div class="s_desc">500 P</div>
+								</div>
+								<div class="total-bottom">
+									<div class="t_name">ИТОГО:</div>
+									<div class="t_desc">61 197 P</div>
+								</div>
+							</div>
+							<div class="checkout-button"><a href="#cart-steps">Продолжить оформление заказа</a></div>
+						</div>
+						
+						<form class="form">
+						<div id="cart-steps" class="box-cart-steps">
+							<div class="box-cart-step-item">
+								<div class="step-title"><span class="step-num">1</span> Введите ваши контактные данные</div>
+								<div class="step-item">
+									<div class="row">
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Фамилия *" required>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>	
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Имя *" required>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<input type="tel" class="form-control phone" name="phone" placeholder="+7(_ _ _)_ _ _-_ _-_ _" required>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Электронная почта" required> 
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-cart-step-item">
+								<div class="step-title"><span class="step-num">2</span> Выберите условия доставки</div>
+								<div class="step-item">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label class="radio-type">
+												<input type="radio" name="delivery" value="1" required>
+												<div class="radio-img"><img src="images/curyer.png" alt="" /></div>
+												<div class="radio-text">Доставка курьером <strong>799 Р</strong><br/><span>Доставка курьером в пределах<br/> выбранного города</span></div>
+												</label>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>	
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label class="radio-type">
+												<input type="radio" name="delivery" value="2">
+												<div class="radio-img"><img src="images/samovivoz-cart.png" alt="" /></div>
+												<div class="radio-text">Самовывоз <strong>Бесплатно</strong><br/><span>Срок хранения заказа в пункте<br/> выдачи 3 дня</span></div>
+												</label>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label>Город доставки</label>
+												<input type="text" class="form-control">
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label>Адрес доставки</label>
+												<input type="text" class="form-control">
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>	
+										</div>
+										<div class="col-lg-12">
+											<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" /><span class="checkbox-custom"></span><span class="list-item-label">Добавить услугу подъема и заноса мебели в квартиру 499 Р</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-cart-step-item">
+								<div class="step-title"><span class="step-num">3</span> Выберите условия оплаты</div>
+								<div class="step-item">
+									<div class="row">
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<label class="radio-type payment">
+												<input type="radio" name="payment" value="1" required>
+												<div class="radio-img"><img src="images/nal.png" alt="" /></div>
+												<div class="radio-text">Наличные</div>
+												<div class="radio-desc">Вы сможете оплатить заказ во<br/> время доставки или самовывоза</div>
+												</label>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>	
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<label class="radio-type payment">
+												<input type="radio" name="payment" value="1">
+												<div class="radio-img"><img src="images/bank-card.png" alt="" /></div>
+												<div class="radio-text">Банковской картой</div>
+												<div class="radio-desc">Вы сможете оплатить заказ прямо сейчас на сайте</div>
+												</label>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<label class="radio-type payment">
+												<input type="radio" name="payment" value="1">
+												<div class="radio-img"><img src="images/beznal.png" alt="" /></div>
+												<div class="radio-text">Безналичный расчет</div>
+												<div class="radio-desc">Мы сформируем счет на оплату для оплаты в банке</div>
+												</label>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<label class="radio-type payment">
+												<input type="radio" name="payment" value="1">
+												<div class="radio-img"><img src="images/credit.png" alt="" /></div>
+												<div class="radio-text">Кредит 0-0-12</div>
+												<div class="radio-desc">Кредитный эксперт подберет для Вас подходящий продукт</div>
+												</label>
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-cart-step-item">
+								<div class="step-title"><span class="step-num">4</span> Введите номер скидочного купона</div>
+								<div class="step-item">
+									<div class="row">
+										<div class="col-lg-5">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Номер скидочного купона">
+												<div class="invalid-feedback">Это поле должно быть заполнено</div>
+											</div>
+										</div>	
+										<div class="col-lg-3">
+											<div class="form-group">
+												<div class="apply-button">
+													<button class="btn send" type="submit">Активировать </button>
+													<div class="tooltip">
+														<span class="tooltiptext">Tooltip text</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-cart-step-item">
+								<div class="step-title"><span class="step-num">5</span> Подтвердите заказ</div>
+								<div class="step-item">
+									<div class="row">
+									<div class="col-xl-6 col-lg-8">
+										<div class="form-group">
+											<textarea class="form-control" placeholder="Комментарий к заказу"></textarea>
+											<div class="invalid-feedback">Это поле должно быть заполнено</div>
+										</div>
+										<div class="total-end-table">
+											<div class="subtotal">
+												<div class="s_name">Стоимость товара</div>
+												<div class="s_desc">60 697 P</div>
+												<div class="s_name">Стоимость доставки</div>
+												<div class="s_desc">799 P</div>
+												<div class="s_name">Стоимость дополнительных услуг</div>
+												<div class="s_desc">500 P</div>
+											</div>
+											<div class="total-bottom">
+												<div class="t_name">ИТОГО К ОПЛАТЕ:</div>
+												<div class="t_desc">61 197 P</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="send-button">
+												<button class="btn send" type="submit">Оформить заказ</button>
+											</div>
+										</div>
+										<div class="cart-detail">
+											  Ваш заказ будет оформлен в течение
+											  1 рабочего дня с 10:00 до 19:00.<br>
+											  Нажимая на кнопку <strong>Оформить заказ</strong>, вы принимаете
+											  условия <a href="#">Публичной оферты</a>
+											</div>										
+									</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						</form>
+					<!--Блок Contacts-->
+					<div class="contacts-bottom-block">
+						<div class="row">
+							<div class="col-xl-4 col-lg-4">
+								<div class="call-us">
+									<div class="contacts-bottom-block-title">
+										Остались вопросы? Звоните нам:
+									</div>
+									<div class="phone"><a href="tel:+79995678965">+7 (999) 567 89 65</a></div>
+									<p>ежедневно с 10.00 до 22.00</p>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4">
+								<div class="social-block">
+									<div class="contacts-bottom-block-title">
+										Присоединяйтесь к нам в соцсетях:
+									</div>
+									<div class="social">
+										<a href="#" target="_blank" class="vk"></a>
+										<a href="#" target="_blank" class="fb"></a>
+										<a href="#" target="_blank" class="ok"></a>
+										<a href="#" target="_blank" class="inst"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4">
+								<div class="write-us">
+									<div class="contacts-bottom-block-title">
+										Нам важно Ваше мнение! Напишите нам:
+									</div>
+									<a class="btn btn-prime" href="" data-toggle="modal" data-target="#ModalLetter">Написать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+	</main>
+</div><!--end container-fluid-->
+</div>
+	<!--Main menu-->
+	<div class="cd-overlay"></div>
+	<nav class="cd-nav container nav-on-left">
+		<div class="catalog">Каталог</div>
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+			<li class="has-children">
+			<a href="#"><span class="icon-icon-krovati"></span><span class="menu-title">Кровати и матрасы</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Все кровати</a></li>
+					<li><a href="#">Кровати с подъемным механизмом</a></li>
+					<li><a href="#">Двухспальные кровати</a></li>
+					<li><a href="#">Односпальные кровати</a></li>
+					<li><a href="#">Детские кровати</a></li>
+					<li><a href="#">Основания для кроватей</a></li>
+					<li><a href="#">Все матрасы</a></li>
+					<li><a href="#">Пружинные матрасы</a></li>
+					<li><a href="#">Независимые матрасы</a></li>
+					<li><a href="#">Наматрасники</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#"><span class="icon-icon-shkafi"></span><span class="menu-title">Шкафы и стеллажи</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Все шкафы</a></li>
+					<li><a href="#">Шкафы 4х дверные</a></li>
+					<li><a href="#">Шкафы 3х дверные</a></li>
+					<li><a href="#">Шкафы 2х дверные</a></li>
+					<li><a href="#">Шкафы 1о дверные</a></li>
+					<li><a href="#">Стеллажи</a></li>
+					<li><a href="#">Шкафы купе</a></li>
+					<li><a href="#">Пристрои</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#"><span class="icon-icon-tumbi"></span><span class="menu-title">Тумбы и комоды</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Тумбы ТВ</a></li>
+					<li><a href="#">Прикроватные тумбы</a></li>
+					<li><a href="#">Комоды</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#"><span class="icon-icon-stoli"></span><span class="menu-title">Столы</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Все столы</a></li>
+					<li><a href="#">Компьютерные столы</a></li>
+					<li><a href="#">Туалетные столики</a></li>
+					<li><a href="#">Столы книжки</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#"><span class="icon-icon-m-gostinnaya"></span><span class="menu-title">Мебель для гостинной</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Серия "Квадро"</a></li>
+					<li><a href="#">Серия "Сенатор"</a></li>
+					<li><a href="#">Серия "Белла"</a></li>
+					<li><a href="#">Серия "Прованс"</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#"><span class="icon-icon-m-prihojaya"></span><span class="menu-title">Мебель для прихожей</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Прихожии</a></li>
+					<li><a href="#">Обувницы</a></li>
+					<li><a href="#">Вешалки</a></li>
+					<li><a href="#">Серия "Прованс"</a></li>
+					<li><a href="#">Серия "Эко"</a></li>
+					<li><a href="#">Серия "Милана"</a></li>
+					<li><a href="#">Серия "Квадро"</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#"><span class="icon-icon-m-spalnya"></span><span class="menu-title">Мебель для спальни</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Кровати</a></li>
+					<li><a href="#">Матрасы</a></li>
+					<li><a href="#">Шкафы для спальни</a></li>
+					<li><a href="#">Тумбы и комоды</a></li>
+					<li><a href="#">Декор</a></li>
+					<li><a href="#">Серия "Милана"</a></li>
+					<li><a href="#">Серия "Эко"</a></li>
+					<li><a href="#">Серия "Оливия"</a></li>
+					<li><a href="#">Серия "Натали"</a></li>
+					<li><a href="#">Серия "Белла"</a></li>
+					<li><a href="#">Серия "Город"</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#"><span class="icon-icon-m-detskaya"></span><span class="menu-title">Мебель для детской</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Кровати</a></li>
+					<li><a href="#">Шкафы</a></li>
+					<li><a href="#">Серия "Дублин Роуз"</a></li>
+					<li><a href="#">Серия "Дублин Стоун"</a></li>
+					<li><a href="#">Серия "Город"</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#"><span class="icon-icon-dlya-doma"></span><span class="menu-title">Товары для дома</span></a>
+				<ul class="cd-secondary-nav is-hidden">
+					<li class="go-back"><a href="#0">Назад</a></li>
+					<li><a href="#">Текстиль</a></li>
+					<li><a href="#">Декоры</a></li>
+					<li><a href="#">Часы</a></li>
+					<li><a href="#">Фигурки</a></li>
+				</ul>
+			</li>
+					<li class="top-mobile"><a href="#">О компании</a></li>
+					<li class="top-mobile"><a href="#">Доставка и оплата</a></li>
+					<li class="top-mobile"><a href="#">Дилерам</a></li>
+					<li class="top-mobile"><a href="#">Контакты</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav><!--main menu-->	
+	</div><!--End wrap-->
+	<!--Footer-->
+    <footer>
+		<div class="footer-top">
+			<div class="container-fluid">
+				<div class="footer-1">
+					<div class="footer-logo"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+					<div class="phone"><a href="tel:79995678965">+7 (999) 567 89 65</a></div>
+					<div class="popup-callback"><a href="#" data-toggle="modal" data-target="#ModalCallback">Заказать звонок</a></div>
+				</div>
+				<div class="footer-2">
+					<div class="menu-block">
+						<a href="#">Адреса магазинов</a>
+						<a href="#">Доставка</a>
+						<a href="#">Акции</a>
+						<a href="#">Контакты</a>
+						<a href="#">Услуги и сервисы</a>
+					</div>
+				</div>
+				<div class="footer-3">
+					<div class="menu-block">
+						<a href="#">Оплата</a>
+						<a href="#">Подарочные карты</a>
+						<a href="#">Часто задаваемые вопросы</a>
+						<a href="#">Правила торговли</a>
+						<a href="#">Купить в кредит</a>
+					</div>
+				</div>
+				<div class="footer-4">
+					<div class="adress icon-map">Центральный офис по адресу:<br/>
+					420053 Казань ул. Поперечно-Ноксинская 4а</div>
+					<div class="icon-icon-mail"><a href="mailto:mebel-stan@mail.ru">mebel-stan@mail.ru</a></div>
+					<div class="oferta">
+						<p>Цена на сайте не является публичной офертой</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-bottom-box">
+				<div class="container-fluid">
+					<div class="copy">
+						<p>&copy; Мебель стан, 2009-2019.</p>
+					</div>
+					<div class="payments">
+						<p>Мы принимаем к оплате: <img src="images/icon-pays.png" alt="" /></p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Modal Заказать звонок -->
+	<div class="modal fade" id="ModalCallback" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <img class="close-desctop" src="images/close.png" alt="Закрыть" />
+			  <img class="close-mobile" src="images/close-mobile.png" alt="Закрыть" />
+			</button>
+		</div>
+		  <div class="modal-body">
+			<div class="form-title">Заказать звонок</div>
+			<form id="zvonok" class="needs-validation form" novalidate>
+					<div class="form-group">
+						<label>Имя</label>
+						<input type="text" class="form-control" required>
+						<div class="invalid-feedback">Это поле должно быть заполнено</div>
+					</div>
+					<div class="form-group">
+						<label>Телефон</label>
+						<input type="tel" class="form-control phone" name="phone" placeholder="+7(_ _ _)_ _ _-_ _-_ _" required>
+						<div class="invalid-feedback">Это поле должно быть заполнено</div>
+					</div>
+					
+					<div class="send-button">
+						<button id="f_call" class="btn send" type="submit">Отправить</button>
+					</div>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal Вход/Регистрация -->
+	<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <img class="close-desctop" src="images/close.png" alt="Закрыть" />
+			  <img class="close-mobile" src="images/close-mobile.png" alt="Закрыть" />
+			</button>
+		</div>
+		  <div class="modal-body">
+			<div class="tabs_block login-tab">
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active form-title" href="#login" role="tab" data-toggle="tab">Вход</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link form-title" href="#register" role="tab" data-toggle="tab">Регистрация</a>
+						</li>
+					</ul>
+					
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!--Вход-->
+						<div role="tabpanel" class="tab-pane fade in active show" id="login">
+							<form id="log-in" class="needs-validation form" novalidate>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Пароль</label>
+										<input type="password" class="form-control" placeholder="***********" required>
+										<div class="invalid-feedback">Это поле должно быть заполнено</div>
+									</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>E-mail</label>
+										<input type="email" class="form-control" name="mail" placeholder="____________@___________" required>
+										<div class="invalid-feedback">Это поле должно быть заполнено</div>
+									</div>
+									</div>
+								</div>	
+									<div class="send-button">
+										<button class="btn send" type="submit">Войти</button>
+									</div>
+							</form>
+							<div class="auth-soc">
+								<p>Войти, используя аккаунт соцсети</p>
+								<div class="social">
+									<a href="#" target="_blank" class="vk"></a>
+									<a href="#" target="_blank" class="fb"></a>
+									<a href="#" target="_blank" class="ok"></a>
+									<a href="#" target="_blank" class="inst"></a>
+								</div>
+							</div>
+						</div>
+						<!--Регистрация-->
+						<div role="tabpanel" class="tab-pane fade" id="register">
+							<form id="reg" class="needs-validation form" novalidate>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Имя</label>
+										<input type="text" class="form-control" required>
+										<div class="invalid-feedback">Это поле должно быть заполнено</div>
+									</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Фамилия</label>
+										<input type="text" class="form-control" required>
+										<div class="invalid-feedback">Это поле должно быть заполнено</div>
+									</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Телефон</label>
+										<input type="tel" class="form-control phone" name="phone" placeholder="+7(_ _ _)_ _ _-_ _-_ _" required>
+										<div class="invalid-feedback">Это поле должно быть заполнено</div>
+									</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>E-mail</label>
+										<input type="email" class="form-control" name="mail" placeholder="____________@___________" required>
+										<div class="invalid-feedback">Это поле должно быть заполнено</div>
+									</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Пароль</label>
+										<input type="password" class="form-control" placeholder="***********" required>
+										<div class="invalid-feedback">Это поле должно быть заполнено</div>
+									</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Повторите пароль</label>
+										<input type="password" class="form-control" placeholder="***********" required>
+										<div class="invalid-feedback">Это поле должно быть заполнено</div>
+									</div>
+									</div>
+									<div class="pass-text col-lg-12">
+										<p>Пароль должен содержать минимум 6 символов</p>
+										<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" required /><span class="checkbox-custom"></span><span class="list-item-label">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a href="#">политики конфиденциальности</a> и даю согласие на <a href="#">обработку персональных данных</a></span></label>
+									</div>
+								</div>	
+									<div class="send-button">
+										<button class="btn send" type="submit">Зарегистрироваться</button>
+									</div>
+							</form>
+						</div>
+					</div>
+			</div>	
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal Написать письмо -->
+	<div class="modal fade" id="ModalLetter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <img class="close-desctop" src="images/close.png" alt="Закрыть" />
+			  <img class="close-mobile" src="images/close-mobile.png" alt="Закрыть" />
+			</button>
+		</div>
+		  <div class="modal-body">
+			<div class="form-title">Написать нам</div>
+			<form id="write-us" class="form">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<label>Город</label>
+						<div class="form-group">
+							<div class="styled-select">
+								<select>
+									<option>Казань</option>
+									<option>Чебоксары</option>
+									<option>Йошкар-ола</option>
+								</select>
+							</div>	
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<label>Магазин</label>
+						<div class="form-group">
+							<div class="styled-select">
+								<select>
+									<option>Интернет-магазин</option>
+									<option>Интернет-магазин2</option>
+									<option>Интернет-магазин3</option>
+								</select>
+							</div>	
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="form-group">
+							<label>Имя</label>
+							<input type="text" class="form-control" required>
+							<div class="invalid-feedback">Это поле должно быть заполнено</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<label>Тема сообщения</label>
+						<div class="form-group">
+							<div class="styled-select">
+								<select>
+									<option>Замечания по работе сайта</option>
+									<option>Замечания по работе сайта2</option>
+									<option>Замечания по работе сайта3</option>
+								</select>
+							</div>	
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="form-group">
+							<label>Номер заказа</label>
+							<input type="text" class="form-control" required>
+							<div class="invalid-feedback">Это поле должно быть заполнено</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="form-group">
+							<label>Телефон</label>
+							<input type="tel" class="form-control phone" name="phone" placeholder="+7(_ _ _)_ _ _-_ _-_ _" required>
+							<div class="invalid-feedback">Это поле должно быть заполнено</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="form-group">
+							<label>E-mail</label>
+							<input type="email" class="form-control" name="mail" placeholder="____________@___________" required>
+							<div class="invalid-feedback">Это поле должно быть заполнено</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="custom-file">
+							<div class="file">
+								<input type="file" class="custom-file-input form-control" id="validatedCustomFile" required>
+								<label class="custom-file-label" for="validatedCustomFile">Прикрепить файл</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="form-group">
+							<label>Комментарий</label>
+							<textarea class="form-control" required></textarea>
+							<div class="invalid-feedback">Это поле должно быть заполнено</div>
+						</div>
+						<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" required /><span class="checkbox-custom"></span><span class="list-item-label">Даю согласие на <a href="#">обработку персональных данных</a></span></label>
+						<div class="capcha">
+							<img src="images/capcha.png" alt="" />
+						</div>
+					</div>
+					<div class="send-button">
+						<button class="btn send" type="submit">Отправить сообщение</button>
+					</div>
+					<div class="pass-text col-lg-12">
+						<p>Мы рады вашим отзывам и предложениям, они помогают нам стать лучше!<br/> Чтобы отправить сообщение, заполните, пожалуйста, все поля формы.<br/> Мы обязательно ответим в течение 24 часов.</p>
+					</div>
+				</div>	
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	
+	<!-- Modal Клик по корзине -->
+	<div class="modal fade" id="ModalOrder" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <img class="close-desctop" src="images/close.png" alt="Закрыть" />
+			  <img class="close-mobile" src="images/close-mobile.png" alt="Закрыть">
+			</button>
+		</div>
+		  <div class="modal-body">
+			<div class="form-title">Корзина</div>
+					<table class="table-cart">
+							<thead>
+								<tr>
+									<th class="td-item">Товар</th>
+									<th>Цена</th>
+									<th>Количество</th>
+									<th>Стоимость</th>
+									<th></th>
+								</tr>
+							</thead>
+					</table>		
+					<div class="cart-overflow">
+						<table class="table-cart">
+							
+							<tbody>
+								<tr>
+									<td class="td-item">
+										<div class="cart-img"><div class="sticker">-20%</div><a href="#"><img src="images/product_2.png" alt="" /></a></div>
+										<div class="item-name">
+											<a href="#">Диван-кровать "Лиссабон"</a>
+											<span class="item-desc">доступен под заказ, срок доставки 9 дней</span>
+											<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" required /><span class="checkbox-custom"></span><span class="list-item-label">Добавить услугу сборки дивана</span></label>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price hidden-xs">
+										<div>
+											<div class="new-price">19 600 P</div>
+											<div class="old-price">21 150 P</div>
+										</div>
+										<div>
+											<div class="skidka">-20%</div>
+											<div class="vigoda">Экономия 1 800 Р</div>
+										</div>	
+									</td>
+									<td data-th="Количество:">
+										<div class="amount-change small-amount">
+											<div class="input-group">
+												<button class="btn btn-default minus" type="button"><i class="fa fa-minus"></i></button>
+												<input type="text" value="1" placeholder="1">
+												<button class="btn btn-default plus" type="button"><i class="fa fa-plus"></i></button>
+											</div>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price"><div class="new-price">19 600 P</div></td>
+									<td>
+										<button type="button" class="delete"><img src="images/delete.png" alt="Удалить" /></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="td-item">
+										<div class="cart-img"><div class="sticker">-20%</div><a href="#"><img src="images/product_2.png" alt="" /></a></div>
+										<div class="item-name">
+											<a href="#">Диван-кровать "Лиссабон"</a>
+											<span class="item-desc">доступен под заказ, срок доставки 9 дней</span>
+											<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" required /><span class="checkbox-custom"></span><span class="list-item-label">Добавить услугу сборки дивана</span></label>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price hidden-xs">
+										<div>
+											<div class="new-price">19 600 P</div>
+											<div class="old-price">21 150 P</div>
+										</div>
+										<div>
+											<div class="skidka">-20%</div>
+											<div class="vigoda">Экономия 1 800 Р</div>
+										</div>	
+									</td>
+									<td data-th="Количество:">
+										<div class="amount-change small-amount">
+											<div class="input-group">
+												<button class="btn btn-default minus" type="button"><i class="fa fa-minus"></i></button>
+												<input type="text" value="1" placeholder="1">
+												<button class="btn btn-default plus" type="button"><i class="fa fa-plus"></i></button>
+											</div>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price"><div class="new-price">19 600 P</div></td>
+									<td>
+										<button type="button" class="delete"><img src="images/delete.png" alt="Удалить" /></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="td-item">
+										<div class="cart-img"><div class="sticker">-20%</div><a href="#"><img src="images/product_2.png" alt="" /></a></div>
+										<div class="item-name">
+											<a href="#">Диван-кровать "Лиссабон"</a>
+											<span class="item-desc">доступен под заказ, срок доставки 9 дней</span>
+											<label class="acceptance"><input type="checkbox" class="checkbox" name="acceptance" required /><span class="checkbox-custom"></span><span class="list-item-label">Добавить услугу сборки дивана</span></label>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price hidden-xs">
+										<div>
+											<div class="new-price">19 600 P</div>
+											<div class="old-price">21 150 P</div>
+										</div>
+										<div>
+											<div class="skidka">-20%</div>
+											<div class="vigoda">Экономия 1 800 Р</div>
+										</div>	
+									</td>
+									<td data-th="Количество:">
+										<div class="amount-change small-amount">
+											<div class="input-group">
+												<button class="btn btn-default minus" type="button"><i class="fa fa-minus"></i></button>
+												<input type="text" value="1" placeholder="1">
+												<button class="btn btn-default plus" type="button"><i class="fa fa-plus"></i></button>
+											</div>
+										</div>
+									</td>
+									<td data-th="Цена:" class="td-price"><div class="new-price">19 600 P</div></td>
+									<td>
+										<button type="button" class="delete"><img src="images/delete.png" alt="Удалить" /></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+					<div class="price-total">
+						Стоимость: <span class="price-current">61 197 P</span>
+					</div>
+					<div class="popup-basket-btns">
+						<span class="btn btn-prime" data-dismiss="modal" aria-label="Close">Продолжить покупки</span>
+						<a href="#" class="btn btn-full">Оформить заказ</a>
+					</div>
+					<div class="products-module">
+						<!--Табы с товарами-->
+						<div class="tabs_block product-tab">
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="nav-item active">
+									<a class="nav-link" href="#similar-products" role="tab" data-toggle="tab">Посмотрите похожие товары</a>
+								</li>
+							</ul>
+							
+							<!-- Tab panes -->
+							<div class="tab-content">
+								
+								<!--Похожие товары-->
+								<div role="tabpanel" class="tab-pane fade in active show" id="similar-products">
+									<div class="hidden-desctop-title">Похожие товары</div>
+									<div class="carousel-slider slider">
+										<div>
+											<div class="item">
+												<div class="sticker">-20%</div>
+												<div class="item-img">
+													<a href="#"><img src="images/product_1.png" alt="" /></a>
+												</div>
+												<div class="item-title">
+													<a href="#">Стол с ящиком<span>Сан-Франциско</span></a>
+												</div>
+												<div class="item-info">
+													<div class="price">
+														<div class="current-price">5 600 Р</div>
+														<div class="old-price">6 150 Р</div>
+													</div>
+													<div class="add-to-cart">
+														<button class="icon-icon-cart"></button>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div>
+											<div class="item">
+												<div class="item-img">
+													<a href="#"><img src="images/product_2.png" alt="" /></a>
+												</div>
+												<div class="item-title">
+													<a href="#">Диван - кровать<span>Доминик</span></a>
+												</div>
+												<div class="item-info">
+													<div class="price">
+														<div class="current-price">19 200 Р</div>
+													</div>
+													<div class="add-to-cart">
+														<button class="icon-icon-cart"></button>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div>
+											<div class="item">
+												<div class="item-img">
+													<a href="#"><img src="images/product_3.png" alt="" /></a>
+												</div>
+												<div class="item-title">
+													<a href="#">Стенка для гостинной<span>Мартин</span></a>
+												</div>
+												<div class="item-info">
+													<div class="price">
+														<div class="current-price">5 600 Р</div>
+														<div class="old-price">6 150 Р</div>
+													</div>
+													<div class="add-to-cart">
+														<button class="icon-icon-cart"></button>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div>
+											<div class="item">
+												<div class="sticker">-20%</div>
+												<div class="item-img">
+													<a href="#"><img src="images/product_4.png" alt="" /></a>
+												</div>
+												<div class="item-title">
+													<a href="#">Кухонный гарнитур<span>Сити</span></a>
+												</div>
+												<div class="item-info">
+													<div class="price">
+														<div class="current-price">19 600 Р</div>
+														<div class="old-price">21 150 Р</div>
+													</div>
+													<div class="add-to-cart">
+														<button class="icon-icon-cart"></button>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div>
+											<div class="item">
+												<div class="sticker">-20%</div>
+												<div class="item-img">
+													<a href="#"><img src="images/product_4.png" alt="" /></a>
+												</div>
+												<div class="item-title">
+													<a href="#">Кухонный гарнитур<span>Сити</span></a>
+												</div>
+												<div class="item-info">
+													<div class="price">
+														<div class="current-price">19 600 Р</div>
+														<div class="old-price">21 150 Р</div>
+													</div>
+													<div class="add-to-cart">
+														<button class="icon-icon-cart"></button>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div>
+											<div class="item">
+												<div class="item-img">
+													<a href="#"><img src="images/product_3.png" alt="" /></a>
+												</div>
+												<div class="item-title">
+													<a href="#">Стенка для гостинной<span>Мартин</span></a>
+												</div>
+												<div class="item-info">
+													<div class="price">
+														<div class="current-price">5 600 Р</div>
+														<div class="old-price">6 150 Р</div>
+													</div>
+													<div class="add-to-cart">
+														<button class="icon-icon-cart"></button>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+
+								
+							</div>
+						</div>
+					</div><!--products-module-->
+		  </div>
+		</div>
+	  </div>
+	</div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<!--<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/jquery.spincrement.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/index-price-slider.js"></script>
+	<script src="js/slick-lightbox.js"></script>
+	<script>
+		$(document).ready(function() {
+		$(".phone").mask("+7 (9 9 9) 9 9 9-9 9 9-9 9");
+	  });
+	</script>
+	<script>
+    var menuElem = document.getElementById('cd-primary-nav');
+    var titleElem = menuElem.querySelector('.main-item');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+  </script>
+  <script>
+		(function($) {
+		$(function() {
+			$('input, select').styler({
+				selectSearch: true,
+			});
+		});
+		})(jQuery);
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".send").submit(function(){ return false; });
+    $(".send").on("click", function(){
+         
+        // тут дальнейшие действия по обработке формы
+        // закрываем окно, как правило делать это нужно после обработки данных
+        $(".modal-body").fadeOut("fast", function(){
+            $(this).before("<div class='success'><div class='form-title'>Спасибо!</div><p>Ваше письмо успешно отправлено!</p></div>");
+        });
+    });
+	
+
+	
+});
+</script>
+
+  </body>
+</html>

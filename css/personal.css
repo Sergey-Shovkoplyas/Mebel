@@ -1,0 +1,248 @@
+.personal {
+  /* outline: 1px solid red; */
+}
+
+.personal * {
+  box-sizing: border-box;
+}
+
+.personal-category {
+  border-bottom: 5px solid #efeced;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.personal-category li {
+  margin-right: 35px;
+  display: inline-block;
+}
+
+.personal-category li:last-child {
+  margin-right: 0px;
+}
+
+.personal-category-item {
+  position: relative;
+  display: block;
+  padding: 10px 3px;
+  color: inherit;
+}
+
+.personal-category-item.personal-category-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background-color: #961346;
+}
+
+
+.category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.category-list li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.category-list li span.quantity {
+  display: inline-block;
+  padding: 0 3px;
+  color: #961346;
+}
+
+.category-list li:last-child {
+  margin-right: 0px;
+}
+
+.category-list-item {
+  display: inline-block;
+  padding: 5px 3px;
+  color: inherit;
+}
+
+.category-list-active {
+  text-decoration: underline;
+}
+
+
+/* #bonuces-------------------------------------------------------------- */
+
+.bonuces-text {
+  max-width: 930px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bonuces-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.bonuces-certificate-text {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.bonuces-certificate {
+  border: 1px solid #c4c4c4;
+  padding: 10px 15px;
+}
+
+.bonuces-btn-wrap {
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.personal-btn {
+  padding: 7px 35px;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* #purchases-------------------------------------------------------------- */
+
+.purchases-table {
+  max-width: 1070px;
+  font-size: 18px;
+  overflow-x: auto;
+  display: block;
+  border-collapse: collapse;
+  word-wrap: nowrap;
+}
+
+.purchases-table .purchases-number {
+  text-decoration: underline;
+}
+
+.purchases-table .purchases-process {
+  color: #3d6a98;
+  font-weight: bold;
+}
+
+.purchases-table .purchases-cenceled {
+  color: #828680;
+  font-weight: bold;
+}
+
+.purchases-table .purchases-delivered {
+  color: #257303;
+  font-weight: bold;
+}
+
+.purchases-table .purchases-sum {
+  font-family: 'Rotonda';
+  font-weight: bold;
+  color: #961346; 
+}
+
+.purchases-table .purchases-extra {
+  padding: 0 15px;
+  font-family: 'Rotonda';
+  font-weight: bold;
+  color: #c2bdbf; 
+}
+
+.purchases-table .purchases-extra span {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c2bdbf;
+}
+.purchases-table .purchases-extra-link a {
+  color: #961346;
+  text-decoration: underline;
+}
+
+
+.purchases-table th:nth-child(1) {
+  width: 200px;
+}
+.purchases-table th:nth-child(2) {
+  width: 200px;
+}
+.purchases-table th:nth-child(3) {
+  width: 145px;
+}
+.purchases-table th:nth-child(4) {
+  width: 170px;
+}
+.purchases-table th:nth-child(5) {
+  width: 145px;
+}
+.purchases-table th:nth-child(6) {
+  width: 100px;
+}
+.purchases-table th:nth-child(7) {
+  width: 100px;
+}
+
+.purchases-table thead {
+  background-color: #efeced;
+  border: 1px solid #efeced;
+}
+
+.purchases-table tbody {
+  border: 1px solid #efeced;
+}
+
+.purchases-table tbody td {
+  border-top: 1px solid #efeced;
+}
+
+.purchases-table th,
+.purchases-table td {
+  padding: 15px;
+  white-space: nowrap;
+}
+
+.purchases-table .row-space {
+  height: 7px;
+  padding: 0;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #efeced;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 991.98px) {
+  .personal-btn {
+    padding: 15px 35px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .bonuces-certificate-wrap {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .bonuces-btn-wrap {
+    width: 100%;
+    margin: 0 0 0 0;
+    text-align: center;
+  }
+}
+
